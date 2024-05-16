@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google AdSense Demo</title>
+    <!-- Include Google AdSense script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2225505529485539" crossorigin="anonymous"></script>
+    <script>
+        // Function to refresh ads every 20 seconds
+        function refreshAds() {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            setTimeout(refreshAds, 20000); // Refresh every 20 seconds
+        }
+    </script>
+</head>
+<body>
+    <!-- Ad container -->
+    <div id="ad-container">
+        <!-- Google AdSense ad unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2225505529485539"
+             data-ad-slot="4798608830"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+    </div>
+    
+    <!-- Initialize ads -->
+    <script>
+        // Initialize ads on page load
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        // Call function to refresh ads
+        refreshAds();
+    </script>
+</body>
+</html>
